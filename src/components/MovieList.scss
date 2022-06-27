@@ -1,0 +1,7 @@
+.movie-list {
+  @apply flex flex-wrap px-8 pb-6;
+
+  &__no-results {
+    @apply w-full text-center py-10 text-lg font-bold;
+  }
+}

@@ -1,0 +1,7 @@
+.footer {
+  @apply fixed w-full bg-gray-900 shadow-lg left-0 bottom-0;
+
+  &__container {
+    @apply max-w-7xl mx-auto px-10 py-6;
+  }
+}

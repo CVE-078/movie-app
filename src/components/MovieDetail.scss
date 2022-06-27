@@ -1,0 +1,49 @@
+.movie-detail {
+  @apply px-8 py-4 md:py-8;
+
+  &__container {
+    @apply flex flex-col;
+  }
+
+  &__header {
+    @apply flex flex-row flex-wrap items-baseline space-x-4;
+  }
+
+  &__title {
+    @apply font-bold text-4xl mb-8;
+  }
+
+  &__year {
+    @apply text-sm;
+  }
+
+  &__image-holder {
+    @apply flex-shrink-0 w-[250px] sm:w-[250px] md:w-[300px] h-auto;
+  }
+
+  &__content {
+    @apply flex flex-col sm:flex-row mb-8;
+  }
+
+  &__details {
+    @apply mt-8 sm:mt-0 sm:ml-8 flex-1;
+  }
+
+  &__details-item {
+    &:not(:nth-last-of-type(1)) {
+      @apply mb-4;
+    }
+
+    span {
+      @apply block;
+    }
+  }
+
+  &__description {
+    @apply max-w-screen-md;
+  }
+
+  &__no-results {
+    @apply w-full text-center py-10 text-lg font-bold;
+  }
+}
